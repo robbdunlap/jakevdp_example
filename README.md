@@ -1,2 +1,2 @@
 # jakevdp_example
-Notebook built following [Jake Vanderplus Reproducible Data Analysis in Jupyter](https://www.youtube.com/watch?v=_ZEWDGpM-vM&list=PLYCpMb24GpOC704uO9svUrihl-HY1tTJJ) YouTube instructional series
+Notebook built following [Jake Vanderplus'](https://github.com/jakevdp) [Reproducible Data Analysis in Jupyter](http://jakevdp.github.io/blog/2017/03/03/reproducible-data-analysis-in-jupyter/)  instructional series
