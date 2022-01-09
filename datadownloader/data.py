@@ -27,12 +27,17 @@ def get_fremont_data(url=fremont_data_url,
     """
     
     if force_download or not os.path.exists(filename):
-        data = pd.read_csv(URL, index_col='Date', parse_dates=True)
+        data = pd.read_csv(URL, index_col='Date')
         data.columns = ['Total','East','West']
         if not os.path.exists('data'):
             os.mkdir('data')
         data.to_csv('data/Fremont.csv')
     else:
-        data = pd.read_csv('data/Fremont.csv', index_col='Date', parse_dates=True)
-    
+        data = pd.read_csv('data/Fremont.csv', index_col='Date')
+
+    try:
+        data.index = pd.to_datetime(data.index, format='%Y-%m-%d %H:%M:%S')
+    except ValueError:
+        data.index = pd.to_datetime(data.index)
+
     return data
