@@ -9,7 +9,7 @@ def get_fremont_data(url=fremont_data_url,
                     filename='data/Fremont.csv', 
                     force_download=False):
     """Download and cache the Fremont bike route traffic data. Pull data from the cache on rerun unless the "force_download"
-       is True or the data doesn't exist in the specific location
+       is True or the data doesn't exist in the specificied location.
 
     Parameters
     ----------
